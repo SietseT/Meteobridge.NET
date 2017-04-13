@@ -11,19 +11,19 @@ Meteobridge.NET is a library that makes it easy to retrieve data from a weathers
 - Basic authentication support
 
 ## What data is retrieved?
-- Temperature (in celsius)
-- Dewpoint (in celsius)
-- Windchill (in celsius)
+- Temperature (celsius)
+- Dewpoint (celsius)
+- Windchill (celsius)
 - Pressure (hPa)
 - Seapressure (hPa)
 - Humidity (%)
 - Rainfall (mm/h)
 - Total rainfall (mm)
-- Delta rainfall (rainfall since last weatherstation measurement, in mm)
-- Wind direction (in degrees)
+- Delta rainfall (rainfall since last weatherstation measurement, mm)
+- Wind direction (degrees)
 - Wind direction (cardinal)
-- Wind speed (in km/h)
-- Wind gust (in km/h)
+- Wind speed (km/h)
+- Wind gust (km/h)
 - Low battery (boolean)
 
 ## How to use?
@@ -42,6 +42,7 @@ var result = request.GetWeatherMeasurement();
 ## What's next?
 - Add documentation to (public) methods
 - Meteobridge [templates](http://www.meteobridge.com/wiki/index.php/Templates) engine
+- Support for Fahrenheit and other data types
 - Support for Meteobridge PRO template files
 - If desired, more ways to authenticate the request, for example: OAuth
 
