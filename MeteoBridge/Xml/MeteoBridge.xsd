@@ -1,0 +1,68 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="logger">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="THB">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:long" name="date"/>
+                <xs:attribute type="xs:string" name="id"/>
+                <xs:attribute type="xs:float" name="temp"/>
+                <xs:attribute type="xs:byte" name="hum"/>
+                <xs:attribute type="xs:float" name="dew"/>
+                <xs:attribute type="xs:float" name="press"/>
+                <xs:attribute type="xs:float" name="seapress"/>
+                <xs:attribute type="xs:byte" name="fc"/>
+                <xs:attribute type="xs:byte" name="lowbat"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TH">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:long" name="date"/>
+                <xs:attribute type="xs:string" name="id"/>
+                <xs:attribute type="xs:float" name="temp"/>
+                <xs:attribute type="xs:byte" name="hum"/>
+                <xs:attribute type="xs:float" name="dew"/>
+                <xs:attribute type="xs:byte" name="lowbat"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RAIN">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:long" name="date"/>
+                <xs:attribute type="xs:string" name="id"/>
+                <xs:attribute type="xs:float" name="rate"/>
+                <xs:attribute type="xs:float" name="total"/>
+                <xs:attribute type="xs:float" name="delta"/>
+                <xs:attribute type="xs:byte" name="lowbat"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="WIND">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:long" name="date"/>
+                <xs:attribute type="xs:string" name="id"/>
+                <xs:attribute type="xs:byte" name="dir"/>
+                <xs:attribute type="xs:float" name="gust"/>
+                <xs:attribute type="xs:float" name="wind"/>
+                <xs:attribute type="xs:float" name="chill"/>
+                <xs:attribute type="xs:byte" name="lowbat"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
