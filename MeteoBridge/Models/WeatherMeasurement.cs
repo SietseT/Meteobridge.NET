@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MeteoBridge.Models
+namespace Meteobridge.Models
 {
     public class WeatherMeasurement
     {

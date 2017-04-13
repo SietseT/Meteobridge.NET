@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace MeteoBridge.Request
+namespace Meteobridge.Request
 {
     public interface IAuthenticationMethod
     {

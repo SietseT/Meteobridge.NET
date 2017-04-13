@@ -1,8 +1,8 @@
-﻿using MeteoBridge.Helpers;
+﻿using Meteobridge.Helpers;
 using Should;
 using Xunit;
 
-namespace MeteoBridge.Tests
+namespace Meteobridge.Tests
 {
     public class DataHelperTests
     {

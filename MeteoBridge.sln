@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.0
+VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeteoBridge", "MeteoBridge\MeteoBridge.csproj", "{9C10B78B-2B83-4FA0-934B-B5D45124FD16}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meteobridge", "MeteoBridge\Meteobridge.csproj", "{9C10B78B-2B83-4FA0-934B-B5D45124FD16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeteoBridge.Tests", "MeteoBridge.Tests\MeteoBridge.Tests.csproj", "{6CC345D8-FADA-440E-A57D-ECFA6BA213D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meteobridge.Tests", "MeteoBridge.Tests\Meteobridge.Tests.csproj", "{6CC345D8-FADA-440E-A57D-ECFA6BA213D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

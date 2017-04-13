@@ -7,8 +7,8 @@
     <ProjectGuid>{9C10B78B-2B83-4FA0-934B-B5D45124FD16}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MeteoBridge</RootNamespace>
-    <AssemblyName>MeteoBridge</AssemblyName>
+    <RootNamespace>Meteobridge</RootNamespace>
+    <AssemblyName>Meteobridge</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -45,17 +45,16 @@
     <Compile Include="Request\Authentication\AuthenticationExtensionMethods.cs" />
     <Compile Include="Request\Authentication\BasicAuthentication.cs" />
     <Compile Include="Request\Authentication\IAuthenticationMethod.cs" />
-    <Compile Include="Request\MeteoBridgeRequest.cs" />
+    <Compile Include="Request\MeteobridgeRequest.cs" />
     <Compile Include="Models\WeatherMeasurement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Request\MeteoBridgeRequestType.cs" />
+    <Compile Include="Request\MeteobridgeRequestType.cs" />
     <Compile Include="Xml\XmlConverter.cs" />
     <Compile Include="Xml\XmlValidator.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Xml\MeteoBridge.xsd">
+    <EmbeddedResource Include="Xml\Meteobridge.xsd">
       <SubType>Designer</SubType>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

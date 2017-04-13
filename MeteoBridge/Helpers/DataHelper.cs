@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace MeteoBridge.Helpers
+namespace Meteobridge.Helpers
 {
     internal static class DataHelper
     {

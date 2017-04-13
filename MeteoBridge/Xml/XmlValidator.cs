@@ -5,11 +5,11 @@ using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Schema;
 
-namespace MeteoBridge.Xml
+namespace Meteobridge.Xml
 {
     internal static class XmlValidator
     {
-        internal static bool ValidMeteoBridgeData(this XDocument document)
+        internal static bool ValidMeteobridgeData(this XDocument document)
         {                      
             var schema = new XmlSchemaSet();
             schema.Add("", XmlReader.Create(new StringReader(GetSchema())));
@@ -33,12 +33,12 @@ namespace MeteoBridge.Xml
             try
             {
                 _assembly = Assembly.GetExecutingAssembly();
-                _textStreamReader = new StreamReader(_assembly.GetManifestResourceStream("MeteoBridge.Xml.MeteoBridge.xsd"));
+                _textStreamReader = new StreamReader(_assembly.GetManifestResourceStream("Meteobridge.Xml.Meteobridge.xsd"));
                 return _textStreamReader.ReadToEnd();
             }
             catch
             {
-                throw new Exception("Xml schema not found: MeteoBridge.xsd");
+                throw new Exception("Xml schema not found: Meteobridge.xsd");
             }
         }
 

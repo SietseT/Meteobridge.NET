@@ -1,22 +1,22 @@
-﻿using MeteoBridge.Models;
-using MeteoBridge.Request.Authentication;
-using MeteoBridge.Xml;
+﻿using Meteobridge.Models;
+using Meteobridge.Request.Authentication;
+using Meteobridge.Xml;
 using System;
 using System.IO;
 using System.Net;
 using System.Xml.Linq;
 
-namespace MeteoBridge.Request
+namespace Meteobridge.Request
 {
-    public class MeteoBridgeRequest
+    public class MeteobridgeRequest
     {  
-        public MeteoBridgeRequest(Uri uri)
+        public MeteobridgeRequest(Uri uri)
         {
             Uri = uri;
         }
 
         public Uri Uri { get; set; }
-        public MeteoBridgeRequestType Type { get; set; } = MeteoBridgeRequestType.Xml;
+        public MeteobridgeRequestType Type { get; set; } = MeteobridgeRequestType.Xml;
         public IAuthenticationMethod Authentication { get; set; }
         public Exception Exception { get; set; }
 
@@ -67,7 +67,7 @@ namespace MeteoBridge.Request
         {
             var url = Uri.GetLeftPart(UriPartial.Authority);
 
-            if (Type == MeteoBridgeRequestType.Xml)
+            if (Type == MeteobridgeRequestType.Xml)
             {
                 url += "/cgi-bin/livedataxml.cgi";
             }
@@ -84,8 +84,8 @@ namespace MeteoBridge.Request
         private WeatherMeasurement GetMeasurementFromResponse(Stream responseStream)
         {
             XDocument doc = XDocument.Load(responseStream);
-            if(!XmlValidator.ValidMeteoBridgeData(doc))
-                throw new FormatException("MeteoBridge response is not in correct format.");
+            if(!XmlValidator.ValidMeteobridgeData(doc))
+                throw new FormatException("Meteobridge response is not in correct format.");
 
             return XmlConverter.Convert(doc);
         }

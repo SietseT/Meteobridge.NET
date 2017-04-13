@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace MeteoBridge.Request.Authentication
+namespace Meteobridge.Request.Authentication
 {
     internal static class AuthenticationExtensionMethods
     {

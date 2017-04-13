@@ -1,9 +1,9 @@
-﻿using MeteoBridge.Helpers;
-using MeteoBridge.Models;
+﻿using Meteobridge.Helpers;
+using Meteobridge.Models;
 using System;
 using System.Xml.Linq;
 
-namespace MeteoBridge.Xml
+namespace Meteobridge.Xml
 {
     internal static class XmlConverter
     {

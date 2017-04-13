@@ -1,6 +1,6 @@
-﻿namespace MeteoBridge.Request
+﻿namespace Meteobridge.Request
 {
-    public enum MeteoBridgeRequestType
+    public enum MeteobridgeRequestType
     {
         Xml
     }

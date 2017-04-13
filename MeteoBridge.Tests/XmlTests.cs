@@ -1,9 +1,9 @@
-﻿using MeteoBridge.Xml;
+﻿using Meteobridge.Xml;
 using Should;
 using System.Xml.Linq;
 using Xunit;
 
-namespace MeteoBridge.Tests
+namespace Meteobridge.Tests
 {
     public class XmlTests
     {
@@ -21,7 +21,7 @@ namespace MeteoBridge.Tests
             var xdoc = XDocument.Parse(xml);
 
             //Act 
-            bool isValidXml = XmlValidator.ValidMeteoBridgeData(xdoc);
+            bool isValidXml = XmlValidator.ValidMeteobridgeData(xdoc);
 
             //Assert
             isValidXml.ShouldBeTrue();

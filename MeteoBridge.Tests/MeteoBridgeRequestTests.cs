@@ -1,18 +1,18 @@
 ﻿using Should;
 using Xunit;
-using MeteoBridge.Request;
-using MeteoBridge.Request.Authentication;
+using Meteobridge.Request;
+using Meteobridge.Request.Authentication;
 using System;
 
-namespace MeteoBridge.Tests
+namespace Meteobridge.Tests
 {
-    public class MeteoBridgeRequestTests
+    public class MeteobridgeRequestTests
     {
         [Fact]
         public void WebRequestUrlShouldBeCorrect()
         {
             //Arrange
-            var request = new MeteoBridgeRequest(new Uri("http://127.0.0.1"));
+            var request = new MeteobridgeRequest(new Uri("http://127.0.0.1"));
 
             //Act
             var webRequest = request.CreateRequest();
@@ -25,7 +25,7 @@ namespace MeteoBridge.Tests
         public void RequestShouldHaveBasicAuthentication()
         {
             //Arrange
-            var request = new MeteoBridgeRequest(new Uri("http://127.0.0.1"));
+            var request = new MeteobridgeRequest(new Uri("http://127.0.0.1"));
             request.Authentication = new BasicAuthentication("user", "password");
 
             //Act
@@ -42,7 +42,7 @@ namespace MeteoBridge.Tests
         public void RequestShouldReturnResponse()
         {
             //Arrange
-            var request = new MeteoBridgeRequest(new Uri("http://127.0.0.1"));
+            var request = new MeteobridgeRequest(new Uri("http://127.0.0.1"));
 
             //Act
             var response = request.GetTestWeatherMeasurement();
